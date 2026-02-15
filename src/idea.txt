@@ -1,0 +1,39 @@
+I have two excel sheets.
+
+Data sheet 1 Columns:
+    SL	JOB NO	Order No	STYLE NO	COLOR 
+    Data sheet 1 has various sheets inside it by name of Target, Kmart, Big w etc.
+
+
+
+Data Sheet 2 Columns:
+    Order No	LC/SC	Buyer Name	Job Year	Job No	Style Name	File No	Internal Ref	Team Name	Team Member	Agent Name	Img	Item Name	SMV	Order Qty.	Unit Price	Order Value	PO insert Date	Ship Date	Ex-Factory Date	PP Approved Date	Days in Hand	Stan. Exc. Cut %	Plan Cut Qty	Total Cut Qty	Cutting balance	Actual Exc. Cut %	Total Emb. Issue Qty	Total Emb. Rcv. Qty	Total Sew Input Qty	Total Sew Output Qty	GMT Finishing Rcv	Fin. Rcv	Total Iron Qty	Total Re-Iron Qty	Total Woven Finish Qty	Total Packing Finish Qty	Ins Qty	Ready To Ship Qty	Fin Goods Status	Reject Qty	Total Ship Out	Ship Out Value	Shortage/ Excess	Order Status	Active Status	Shipping Status	production remarks	Order Remarks
+
+    The main Columns are Order No, Buyer name, Job no, Style name, Job Year
+
+I want to match the data sheet 1 with data sheet 2 accoding to the JOB no and, PO NO.
+
+Match according to this logic:
+    first make all data into a pure string and capitalize it. 
+    JOB NO = Job no
+    Order No =  Order No
+
+
+Data sheet 1 will comapre with data sheet 1 and fetch these results 
+
+Order Qty. , Plan Cut Qty, Total Cut Qty, Cutting balance, Total Sew Input Qty, Total Sew Output Qty, Total Iron Qty, Total Packing Finish Qty, Total Ship Out.
+
+with this results it will create a new excel sheet:
+SL	JOB NO	Order No	STYLE NO	COLOR  Order Qty. , Plan Cut Qty, Total Cut Qty, Cutting balance, Total Sew Input Qty, Total Sew Output Qty,Sewing balance(Total Sewing Input Qty- Total Sew Output Qty) Total Iron Qty, Total Packing Finish Qty, Total Ship Out.
+
+matching logic:
+Use a drop down to select buyer sheets from the data sheet 1, then accoding to the buyer sheet first match the Job no.
+for example: 196 and SGL-25-00196. Take the 196 and match it with SGL-25-00196 (196).
+
+after job is matched then match PO no with order no. if they match create a new sheet. if not matched also create a sheet with blank values.
+
+I want to use python and tkinter. I want multiple format support.
+
+
+
+
