@@ -98,6 +98,5 @@ More buyer formats will be added in future updates.
 ## 👨‍💻 Developer
 
 **Rakib Hasan**  
-Garments Intelligence & Automation System  
 
 © 2026 ProdSync
